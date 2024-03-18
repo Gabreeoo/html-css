@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospdedados localmente</h1>
+
+    <p>
+        Este videoe está hospedado no meu proprio servidor
+    </p>
+
+    <video src="midias/Meu Vídeo1.mp4"  controls width="500"></video>
+    <br>
+    <p>
+        Usando a tag &lt;video&gt;, podemos colocar videos no site. Também tendo metodos assim como a tag &lt;media&gt;
+         mas podendo usar  o <code>width</code> para alterar o tamanho
+    </p>
+    
+    <!--
+    <video src="midias/RONALDINHO x MANO ZAFE MANO ZAFE ULTRA BASS.mp4" width="500" controls></video>
+    -->
+
+    <video  width="500"controls poster="../ex011/imagens/img-p.png">
+        <source src="midia/Meu Vídeo1.mp4" type="video/mp4">
+        <source src="midias/RONALDINHO x MANO ZAFE MANO ZAFE ULTRA BASS.mp4" type="video/mp4">
+
+    </video>
+
+    <p>
+        Também podemos usar o <code>&lt;source&gt;</code>, assim como nas fotos. Por exemplo:
+    </p>
+    <p>
+        <code>
+            &lt;source src="midias/RONALDINHO x MANO ZAFE MANO ZAFE ULTRA BASS.mp4" type="video/mp4"&gt;
+        </code>
+    </p>
+
+    <h1>Inserindo videos do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rURWUQTe3D8?si=QLmI-w4bEWi3mC1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>=

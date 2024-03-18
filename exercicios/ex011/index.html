@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML 5</title>
+    <style>
+        mark{
+            background-color:white;
+            color: rgb(31, 233, 31);
+        }
+    </style>
+</head>
+<body>
+    <h1>Midias em HTML5</h1>
+    <h2>Imagens dinamicas</h2>
+    <p>
+        Tente abrir o site de outros dispositivos, ou apenas aumente o tamanho do navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem dinamica">
+    </picture>
+    <p>
+        A tag &lt;source&gt; usada para dar dinamica ao tamanho das imagens, tendo que seguir a ordem de tamanho.
+    </p>
+    <hr>
+    <h2>Reprodução de Audio.</h2>
+
+    <audio src="midia/Jay-Z - 444.mp3" controls></audio>
+
+    <p>
+        Utilizando a tag &lt;audio&gt;, podemos inserir a musica com a ajuda de alguns metodos, exemplo: <br>
+        <code>&lt;<mark style="color: rgb(255, 58, 166);">audio</mark> <mark>src</mark>=<mark style="color: rgb(196, 196, 0);">"midia/Jay-z - 444.mp3"</mark> <mark><em>controls autoplay</em></mark>&gt;</code>
+        <!-- MP3 WAV OGG-->
+    </p>
+    <br>
+    <p>
+        Passaremos agora para outro metodo de colocar audios no site, com a mesma tag, pórem de forma diferente.
+    </p>
+    <audio preload="metadata" controls>
+        <source src="midia/Jay-Z - 444.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        <pre>
+            <code>
+                &lt; audio <em>preload</em>="metadata" <em>controls</em>&gt; <br>
+                &lt;source <em>src</em>"midia/Jay-Z - 444.mp3" <em>type</em>="audio/mpeg"&gt;
+                  </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Testando videos</h2>
+
+    
+</body>
+</html>

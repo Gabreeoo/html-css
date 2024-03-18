@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+    background-color: #8ed18e;
+}
+header{
+    background-color: #0b5e0b;
+    color: #69d369;
+    text-align: center;
+    padding: 15px; 
+}
+
+h1.cabeçalho{
+    padding: 10px;
+
+}
+
+#link_menu{
+    text-align: justify;
+}
+nav > a{
+    color: #69d369;
+    text-decoration: none;
+    margin:7px;
+
+}
+a:hover{
+    text-decoration: underline;
+
+}
+main{
+    background-color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px black;
+
+}
+main > h1{
+    margin:0px;
+
+}
+footer{
+    background-color: #0b5e0b;
+    color: #69d369;
+    text-align: center;
+    
+}

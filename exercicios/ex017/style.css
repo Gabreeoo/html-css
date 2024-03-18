@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, rgb(2, 0, 102),rgb(5, 74, 202));
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    width: 600px;;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px rgb(18, 24, 110);
+}
+p{
+    text-align: justify;
+    font-size: 1em;
+}
+h1, h2{
+    text-align: center;
+    color: rgb(2, 87, 59);
+    font-size: 2em;
+    font: bold 1.8em 'Times New Roman', sans-serif;
+
+    /* 
+
+    font: font-style -> font-weight -> font-size -> font-family
+
+    */
+}
