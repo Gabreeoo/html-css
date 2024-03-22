@@ -10,7 +10,10 @@
     margin: 0px;
 }
 :root{
-    
+    --cor01: #84E1AD;
+    --cor02: #3CDC83;
+    --cor03: #195935;
+    --cor04: #1F603C;
     --font-android: 'Android'
 }
 
