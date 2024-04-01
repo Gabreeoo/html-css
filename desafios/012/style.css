@@ -6,22 +6,49 @@
 
 *{
     margin: 0px;
+    padding: 0px;
     
 }
-* p{
+section  p{
     font-family:Sriracha, Arial, Helvetica, sans-serif;
     padding: 20px;
     text-align: left;
     text-indent: 1em;
     line-height: 2em;
 }
+html, body{
+    min-height: 100vh;
+}
 header{
     background-color: black;
     padding: 30px 0px 40px 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 header h1{
     color: white;
     text-align: center;
     font-family: "Passion One", Arial, Helvetica, sans-serif;
 
+}
+header h2{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 20px 0px 0px 0px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+}
+.com_foto{
+    background-color: darkgray;
 }
