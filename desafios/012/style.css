@@ -35,7 +35,9 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte01);
 }
+
 header h1{
     color: white;
     text-align: center;
@@ -78,4 +80,10 @@ section.com_foto > p{
     display: inline-block;
     margin: 1em;
     color: white;    
+}
+button{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 255, 0.274);
 }
