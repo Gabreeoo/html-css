@@ -81,9 +81,3 @@ section.com_foto > p{
     margin: 1em;
     color: white;    
 }
-button{
-    width: 7vw;
-    height: 7vw;
-    border-radius: 5px;
-    border-color: rgba(0, 0, 255, 0.274);
-}
