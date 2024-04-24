@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+        :root{
+            --cor_tabela: rgb(94, 94, 94)
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -12,27 +15,62 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 7px;
 
         }
-        thead, tfoot{
-            background-color: rgb(179, 179, 179);
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: var(--cor_tabela);
+
         }
-        td:nth-child(2){
+        thead, tfoot{
+            background-color: var(--cor_tabela);
+            color: white;
+        }
+        td:nth-child(even){
             text-align: right;
         }
+        caption{
+           font-size: 1.5em;
+           font-weight: bold;
+           padding: 10px;
+           background-color: var(--cor_tabela);
+           color: white;
+           border: solid black 1px;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
     </style>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        Table
+            Caption
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
 
         </thead>
         <tbody>
@@ -87,9 +125,24 @@
             
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td>0000</td>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi dolorem nostrum iure! Voluptates eveniet doloremque quis beatae sequi saepe maxime perspiciatis ad. Magni sint tempore neque, id corrupti quos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium, libero quae, repellendus deleniti dicta nam odio adipisci reiciendis exercitationem et maxime rerum voluptatibus veniam. Possimus nihil molestiae vitae quia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt quos nemo laudantium corporis ipsum ducimus blanditiis at maiores commodi vero dignissimos officiis, aut ex! Adipisci amet expedita enim dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti illum pariatur ipsa sint cumque id tempora rem hic cupiditate? Ratione ipsam tempore officiis voluptates? Commodi magnam voluptate quod maiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi amet soluta autem magnam dolorum laborum assumenda quidem similique! Libero, consectetur! Perspiciatis doloremque repellendus similique enim inventore labore consequatur nihil!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit, pariatur maxime aliquam culpa eligendi magni eaque rem, doloremque voluptatum quia nemo ad laudantium quis. Cum sapiente ea sunt explicabo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus error reprehenderit ullam modi aliquam eligendi. Reiciendis enim quis, quae rerum deserunt iste quaerat nemo ullam cum! Ex, nisi itaque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque ullam labore aperiam perferendis culpa molestiae vel officiis neque repudiandae tempora, obcaecati illo sed ut ab quia eum eius magni.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quas architecto ipsam quis, dolorem reiciendis dolorum dignissimos, officia assumenda illo quam officiis excepturi provident fuga laboriosam animi velit. Vero, tempora.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minima, cumque tempora, quo suscipit quisquam esse perferendis odit quis nam nostrum, rerum eaque dolor. Atque earum unde nesciunt saepe corporis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam libero dicta quos repellat ducimus, aliquid fuga consectetur odit ipsum ipsam eius similique facere alias officia laborum itaque voluptatum? Optio.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odit, facilis exercitationem ab vero saepe ut labore nesciunt voluptas temporibus vitae minima impedit quo assumenda fugiat quae veniam voluptate sapiente.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis labore adipisci quo veritatis id laborum doloremque sapiente excepturi reiciendis minus aperiam saepe obcaecati maxime aspernatur iusto illo, expedita facilis itaque!
+    </p>
 </body>
 </html>
