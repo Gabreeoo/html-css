@@ -13,14 +13,14 @@
 <body>
     <h1>Exemplo de formulario</h1>
 
-    <form action="cadastro.php" method="get">
+    
 
         <fieldset>
             <legend>Sexo</legend>
             <form action="cadastro.php" method="get">
 
                 <p>
-                    <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label>
+                    <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
                     <br>
                     <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
 
@@ -29,10 +29,13 @@
             </form>
         </fieldset>
 
+       
+       <form action="cadastro.php" method="GET">
+       
         <fieldset>
             <legend>Esportes Favoritos</legend>
             <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label> <br>
-            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
             <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
             <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label> <br>
             <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label> <br>
